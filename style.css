@@ -2,6 +2,87 @@
   box-sizing: border-box;
 }
 
+/*Event and News*/
+.eventNews {
+  display: flex;
+  padding: 52px 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.eventNews-container {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+
+.news-font {
+  color: black;
+  font-family: Newsreader;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.news-list {
+  display: flex;
+  padding: 0px 86px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  border-left: 1px solid black;
+}
+
+.news-details {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  align-self: stretch;
+}
+
+.news-date {
+  color: #030421;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.news-design {
+  background-color: black;
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news {
+  color: white;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.news-text {
+  color: black;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/*footer*/
 .footer {
   background-color: black;
   width: 100%;
@@ -37,7 +118,7 @@
 
 .links a {
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
   left: 0;
 }
