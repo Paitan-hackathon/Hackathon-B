@@ -7,7 +7,7 @@
   display: flex;
   padding: 52px 140px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   align-self: stretch;
 }
@@ -80,6 +80,94 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+/*rooms*/
+.rooms {
+  background-color: #e5e5e5;
+  display: flex;
+  padding: 80px var(--item-spacing-110, 110px);
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.stay-plan {
+  color: #03082e;
+  font-family: Newsreader;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.stay-plan-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 15px;
+}
+
+.plan-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.plan-content {
+  display: flex;
+  padding: 0px 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.plan-title {
+  color: black;
+  font-family: Newsreader;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 6.4px;
+}
+
+.plan-details {
+  color: black;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.list-button-container {
+  display: flex;
+  padding: 12px 66px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: var(--stroke-weight-2, 2px) solid #04062e;
+
+  color: black;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.list-button-container:hover {
+  background-color: black;
+  color: white;
 }
 
 /*footer*/
