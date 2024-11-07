@@ -97,6 +97,7 @@
   flex-direction: column;
   padding: 80px 110px;
   gap: 30px;
+  font-family: "Noto Sans JP";
 }
 
 .features-cards h2{
@@ -108,7 +109,6 @@
 
 .features-card{
   display: flex;
-  align-items: flex-end;
   gap: 24px;
   padding: 28px 0;
 }
@@ -116,10 +116,10 @@
 .features-textarea{
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
   padding-bottom: 20px;
   gap: 18px;
   color:#010340;
-
 }
 
 .features-title-number{
@@ -134,6 +134,7 @@
 
 .features-text p{
   margin: 0;
+  font-size: 15px;
 }
 
 .features-image img{
@@ -150,6 +151,39 @@
 
 .dark-theme.features-textarea{
   color: #030421;
+} */
+
+/* access */
+.access{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 90px;
+  background-color: #E5E5E5;
+  font-family: "Noto Sans JP";
+}
+
+.access-title{
+  margin: 0;
+  font-size: 50px;
+  color: #030421;
+}
+
+.access-checkin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.access-checkin p{
+  margin: 0;
+}
+
+/* .dark-theme.access{
+  background-color: #EEEEEE;
 } */
 
 /*footer*/
