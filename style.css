@@ -194,6 +194,7 @@
   padding: 80px 110px;
   gap: 30px;
   font-family: "Noto Sans JP";
+  line-height: 1.5;
 }
 
 .features-cards h2{
@@ -202,6 +203,7 @@
   font-size: 50px;
   font-family: "Newsreader";
   color: #010340;
+  letter-spacing: 0.2em;
 }
 
 .features-card{
@@ -259,12 +261,15 @@
   padding: 80px 90px;
   background-color: #E5E5E5;
   font-family: "Noto Sans JP";
+  line-height: 1.5;
 }
 
 .access-title{
   margin: 0;
   font-size: 50px;
   color: #030421;
+  font-family: "Newsreader";
+  letter-spacing: 0.2em;
 }
 
 .access-checkin{
