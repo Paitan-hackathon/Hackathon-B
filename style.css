@@ -91,6 +91,9 @@
   line-height: 150%;
 }
 
+/* rooms */
+
+
 /* features card */
 .features-cards{
   display: flex;
@@ -152,8 +155,6 @@
 .dark-theme.features-textarea{
   color: #030421;
 } */
-
-/* rooms */
 
 /* access */
 .access{
