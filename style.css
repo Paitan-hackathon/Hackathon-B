@@ -16,6 +16,15 @@
   display: flex;
   align-items: center;
   gap: 62px;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.eventNews-container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .news-font {
