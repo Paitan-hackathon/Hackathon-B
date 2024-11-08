@@ -26,9 +26,9 @@
   align-items: center;
   gap: 62px;
 
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s, transform 1s;
 }
 
 .eventNews-container.on {
@@ -109,6 +109,22 @@
   align-items: center;
   gap: 30px;
   align-self: stretch;
+
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  transform: translateX(30px);
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.rooms.on {
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: translateX(0);
 }
 
 .stay-plan {
