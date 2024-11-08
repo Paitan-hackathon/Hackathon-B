@@ -139,7 +139,6 @@ body {
   padding: 10px;
   border-bottom: 0.5px dashed #030421;
   margin: 0px;
-  font-size: 15px;
   font-weight: 400;
 }
 
@@ -248,8 +247,6 @@ body {
 
 .news-date {
   color: #030421;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -266,8 +263,6 @@ body {
 
 .news {
   color: white;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -275,8 +270,6 @@ body {
 
 .news-text {
   color: black;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -364,8 +357,6 @@ body {
 .plan-details {
   color: black;
   text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -385,8 +376,6 @@ body {
   cursor: pointer;
   color: black;
   text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -402,7 +391,6 @@ body {
   flex-direction: column;
   padding: 80px 110px;
   gap: 30px;
-  font-family: "Noto Sans JP";
   line-height: 1.5;
 }
 
@@ -451,7 +439,6 @@ body {
 
 .features-text p {
   margin: 0;
-  font-size: 15px;
 }
 
 .features-image img {
@@ -478,7 +465,6 @@ body {
   gap: 30px;
   padding: 80px 90px;
   background-color: #e5e5e5;
-  font-family: "Noto Sans JP";
   line-height: 1.5;
 }
 
@@ -495,7 +481,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
 }
 
 .access-checkin p {
@@ -543,7 +528,6 @@ body {
 
 .links a {
   color: white;
-  font-size: 15px;
   text-decoration: none;
   left: 0;
 }
@@ -559,8 +543,6 @@ body {
   color: white;
   text-align: center;
   align-items: center;
-  font-family: "Noto Sans JP";
-  font-size: 15px;
   font-style: normal;
   font-weight: 350;
   line-height: 22.5px;
