@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const targets = document.querySelectorAll(".eventNews-container, .rooms");
+  const targets = document.querySelectorAll(".eventNews-container, .rooms, .features-card");
 
   const observerOptions = {
     root: null,
@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const tl = gsap.timeline({repeat:-1});
-  tl.to(".top-image-slide", {x:"-100vw", duration:2, onStart: () => updateIndicator(1)});
-  tl.to(".top-image-slide", {x:"-200vw", duration:2, onStart: () => updateIndicator(2)});
-  tl.to(".top-image-slide", {x:"-300vw", duration:2, onStart: () => updateIndicator(3)});
-  tl.to(".top-image-slide", {x:"-400vw", duration:2, onStart: () => updateIndicator(0)});
+  tl.to(".top-image-slide", {x:"-100vw", duration:4, delay:1, onStart: () => updateIndicator(1)});
+  tl.to(".top-image-slide", {x:"-200vw", duration:4, delay:1, onStart: () => updateIndicator(2)});
+  tl.to(".top-image-slide", {x:"-300vw", duration:4, delay:1, onStart: () => updateIndicator(3)});
+  tl.to(".top-image-slide", {x:"-400vw", duration:4, delay:1, onStart: () => updateIndicator(0)});
   tl.to(".top-image-slide", { x: 0, duration: 0});
 })
 
