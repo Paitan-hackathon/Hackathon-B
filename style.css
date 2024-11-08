@@ -2,12 +2,85 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 150%;
+  padding-top: 139px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  padding: 16px 84px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-content-container {
+  display: flex;
+  align-items: center;
+  margin-left: 162px;
+  gap: 33px;
+}
+
+.header-content {
+  padding: 4px 12px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 1.95px;
+}
+
+.reservation-button {
+  height: fit-content;
+  padding: 16px 66px;
+  border-radius: 12px;
+  border: 2px solid #04062e;
+  cursor: pointer;
+}
+
+/* about */
+/* .about {
+  padding: 80px 110px;
+}
+
+.about-title {
+  margin-bottom: 30px;
+}
+
+.about-card {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* activity */
+/* .activity-card-list {
+  display: flex;
+  gap: 16px;
+}
+
+.activity-card {
+  width: 380px;
+} */
+
 /* top image */
-.top-image{
+.top-image {
   display: flex;
   justify-content: center;
 }
-.top-image img{
+.top-image img {
   width: 100%;
 }
 
@@ -188,7 +261,7 @@
   color: white;
 }
 /* features card */
-.features-cards{
+.features-cards {
   display: flex;
   flex-direction: column;
   padding: 80px 110px;
@@ -196,7 +269,7 @@
   font-family: "Noto Sans JP";
 }
 
-.features-cards h2{
+.features-cards h2 {
   margin: 0;
   text-align: center;
   font-size: 50px;
@@ -204,37 +277,37 @@
   color: #010340;
 }
 
-.features-card{
+.features-card {
   display: flex;
   gap: 24px;
   padding: 28px 0;
 }
 
-.features-textarea{
+.features-textarea {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   padding-bottom: 20px;
   gap: 18px;
-  color:#010340;
+  color: #010340;
 }
 
-.features-title-number{
+.features-title-number {
   margin: 0;
   font-size: 50px;
 }
 
-.features-sub-title{
+.features-sub-title {
   margin: 0;
   font-size: 29px;
 }
 
-.features-text p{
+.features-text p {
   margin: 0;
   font-size: 15px;
 }
 
-.features-image img{
+.features-image img {
   border-radius: 10px;
 }
 
@@ -251,23 +324,23 @@
 } */
 
 /* access */
-.access{
+.access {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 80px 90px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   font-family: "Noto Sans JP";
 }
 
-.access-title{
+.access-title {
   margin: 0;
   font-size: 50px;
   color: #030421;
 }
 
-.access-checkin{
+.access-checkin {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,7 +348,7 @@
   font-size: 15px;
 }
 
-.access-checkin p{
+.access-checkin p {
   margin: 0;
 }
 
