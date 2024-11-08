@@ -200,7 +200,7 @@
   align-items: center;
   border-radius: 12px;
   border: var(--stroke-weight-2, 2px) solid #04062e;
-
+  cursor: pointer;
   color: black;
   text-align: center;
   font-family: "Noto Sans JP";
