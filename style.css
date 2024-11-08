@@ -3,11 +3,11 @@
 }
 
 /* top image */
-.top-image{
+.top-image {
   display: flex;
   justify-content: center;
 }
-.top-image img{
+.top-image img {
   width: 100%;
 }
 
@@ -135,6 +135,12 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
+}
+
+.plan-introduction img:hover {
+  transform: scale(1.2);
+  transition: transform 0.6s ease;
 }
 
 .plan-content {
@@ -144,6 +150,7 @@
   align-items: center;
   gap: 8px;
   align-self: stretch;
+  color: black;
 }
 
 .plan-title {
@@ -164,6 +171,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.plan-details:hover {
+  text-decoration: underline;
 }
 
 .list-button-container {
@@ -188,7 +199,7 @@
   color: white;
 }
 /* features card */
-.features-cards{
+.features-cards {
   display: flex;
   flex-direction: column;
   padding: 80px 110px;
@@ -196,7 +207,7 @@
   font-family: "Noto Sans JP";
 }
 
-.features-cards h2{
+.features-cards h2 {
   margin: 0;
   text-align: center;
   font-size: 50px;
@@ -204,37 +215,37 @@
   color: #010340;
 }
 
-.features-card{
+.features-card {
   display: flex;
   gap: 24px;
   padding: 28px 0;
 }
 
-.features-textarea{
+.features-textarea {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   padding-bottom: 20px;
   gap: 18px;
-  color:#010340;
+  color: #010340;
 }
 
-.features-title-number{
+.features-title-number {
   margin: 0;
   font-size: 50px;
 }
 
-.features-sub-title{
+.features-sub-title {
   margin: 0;
   font-size: 29px;
 }
 
-.features-text p{
+.features-text p {
   margin: 0;
   font-size: 15px;
 }
 
-.features-image img{
+.features-image img {
   border-radius: 10px;
 }
 
@@ -251,23 +262,23 @@
 } */
 
 /* access */
-.access{
+.access {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 80px 90px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   font-family: "Noto Sans JP";
 }
 
-.access-title{
+.access-title {
   margin: 0;
   font-size: 50px;
   color: #030421;
 }
 
-.access-checkin{
+.access-checkin {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,7 +286,7 @@
   font-size: 15px;
 }
 
-.access-checkin p{
+.access-checkin p {
   margin: 0;
 }
 
@@ -315,6 +326,7 @@
   list-style: none;
   padding-left: 5px;
   display: flex;
+  letter-spacing: 0.12em;
 }
 
 .links a {
