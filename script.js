@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const targets = document.querySelectorAll(".eventNews-container");
+  const targets = document.querySelectorAll(".eventNews-container, .rooms");
 
   const observerOptions = {
     root: null,
