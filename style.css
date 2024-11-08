@@ -90,14 +90,73 @@ body {
 }
 
 /* activity */
-/* .activity-card-list {
+.activity {
+  padding: 80px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #eee;
+}
+
+.activity-title {
+  font-family: Newsreader;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 10px;
+  margin: 0px;
+}
+
+.activity-card-list {
   display: flex;
   gap: 16px;
+  margin-bottom: 180px;
 }
 
 .activity-card {
   width: 380px;
-} */
+  position: relative;
+}
+
+.activity-card img {
+  width: 100%;
+}
+
+.activity-card-description {
+  width: 350px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background: #fff;
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.activity-card-title {
+  padding: 10px;
+  border-bottom: 0.5px dashed #030421;
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.activity-card-text {
+  padding: 10px;
+  margin: 0px;
+  padding: 12px 20px 0px 20px;
+}
+
+.activity-button {
+  padding: 12px 66px;
+  border-radius: 12px;
+  border: 2px solid #030421;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 /* top image */
 .top-image {
