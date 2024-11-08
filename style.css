@@ -7,6 +7,8 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 150%;
   padding-top: 139px;
+  color: #030421;
+  margin: 0;
 }
 
 /* header */
@@ -41,6 +43,12 @@ body {
   text-align: center;
   cursor: pointer;
   letter-spacing: 1.95px;
+  transition: all 0.3s ease;
+}
+
+.header-content:hover {
+  color: #141998;
+  border-bottom: 1px solid #141998;
 }
 
 .reservation-button {
@@ -49,21 +57,37 @@ body {
   border-radius: 12px;
   border: 2px solid #04062e;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* about */
-/* .about {
-  padding: 80px 110px;
-}
-
-.about-title {
-  margin-bottom: 30px;
-}
-
-.about-card {
+.about {
+  background-image: url("images/stars-overlay.png");
+  height: 720px;
   display: flex;
-  justify-content: space-between;
-} */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.about-logo {
+  width: 239px;
+}
+
+.about-text-container {
+  color: #e2e2e2;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0px;
+}
+
+.about-text {
+  margin: 0px;
+}
 
 /* activity */
 /* .activity-card-list {
