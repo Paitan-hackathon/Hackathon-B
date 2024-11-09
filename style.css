@@ -63,6 +63,12 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.reservation-button:hover {
+  background-color: #030421;
+  color: #fff;
 }
 
 .hamburger {
