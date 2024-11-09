@@ -29,13 +29,11 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  flex: 1;
 }
 
 .header-content-container {
   display: flex;
   align-items: center;
-  margin-left: 162px;
   gap: 33px;
   list-style: none;
 }
@@ -192,6 +190,22 @@ body {
 
 .about-text {
   margin: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about {
+    padding: 0px 71px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about {
+    padding: 0px 32px;
+  }
+
+  .about-logo {
+    width: 200px;
+  }
 }
 
 /* activity */
