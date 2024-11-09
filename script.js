@@ -78,3 +78,12 @@ gsap.fromTo(
     repeat: -1,
   }
 );
+
+// header
+const menuIcon = document.getElementById("menuIcon");
+const header = document.getElementById("header");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("open");
+  header.classList.toggle("active");
+});

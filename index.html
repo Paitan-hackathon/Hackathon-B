@@ -18,35 +18,42 @@
   </head>
   <body>
     <!-- header -->
-    <section>
-      <header class="header">
-        <div class="header-container">
-          <img src="./images/logo-black.svg" alt="ヘッダーロゴ" />
-          <div class="header-content-container">
-            <div class="header-content">
-              <a class="header-link">NEWS</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">RECOMMEND</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">PLAN</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">ACTIVITY</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">ACCESS</a>
-            </div>
-          </div>
-        </div>
-        <button class="reservation-button">予約</button>
-      </header>
-    </section>
+    <header class="header">
+      <nav id="header" class="header-container">
+        <img src="./images/logo-black.svg" alt="ヘッダーロゴ" />
+        <ul class="header-content-container">
+          <li class="header-content">
+            <a class="header-link">NEWS</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">RECOMMEND</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">PLAN</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">ACTIVITY</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">ACCESS</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">予約</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="reservation-button">予約</button>
+      <button id="menuIcon" class="hamburger">
+        <span class="hamburger-bar top"></span>
+        <span class="hamburger-bar middle"></span>
+        <span class="hamburger-bar bottom"></span>
+      </button>
+    </header>
+
     <!-- top image -->
     <section class="top-image">
       <div class="top-image-container">
-        <div class="top-image-slide"></div>
+        <div class="top-image-slide">
           <img src="./images/image.jpg" alt="" />
         </div>
         <div class="top-image-slide">
@@ -96,7 +103,7 @@
     <!-- about -->
     <section>
       <div class="about">
-        <img src="images/logo.svg" class="about-logo" alt=""/>
+        <img src="images/logo.svg" class="about-logo" alt="ロゴ" />
         <div class="about-text-container">
           <p class="about-text">
             日本一星空が綺麗な場所として有名な、
