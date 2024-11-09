@@ -94,3 +94,36 @@ menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("open");
   header.classList.toggle("active");
 });
+
+// トグルボタンでクラス付与
+const toggle = document.getElementById('dark-mode-toggle');
+const containers = document.querySelectorAll(
+  'body, .header, .reservation-button, .features-cards, .features-cards h2, .features-textarea, .hamburger-bar, ' +
+  '.hamburger, .news-font, .news-list, .news-date, .news-design, .news, .news-text, .top-image-indicator, ' +
+  '.top-image-indicator.active, .rooom' 
+);
+
+toggle.addEventListener('change', function() {
+    containers.forEach(container => {
+        if (this.checked) {
+            container.classList.add('dark-mode');
+        } else {
+            container.classList.remove('dark-mode');
+        }
+    });
+});
+
+// ダークモード ライトモード logo変更
+const logo = document.getElementById('logo');
+
+toggle.addEventListener('change', function() {
+    if (this.checked) {
+        // ダークモード
+        document.body.classList.add('dark-mode');
+        logo.src = './images/logo-dark-mode.svg';  // ダークモード用のロゴに変更
+    } else {
+        // ライトモード
+        document.body.classList.remove('dark-mode');
+        logo.src = './images/logo-black.svg';  // ライトモード用のロゴに変更
+    }
+});
