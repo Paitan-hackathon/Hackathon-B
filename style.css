@@ -641,7 +641,7 @@ body {
     padding: 21px 12px;
     align-items: flex-start;
     color: black;
-    align-items: stretch;
+    width: 100%;
   }
 
   .plan-title {
