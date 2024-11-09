@@ -873,6 +873,12 @@ body {
   left: 0;
 }
 
+.links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--sidecar-yellow, #eddea3);
+}
+
 .informationFrame {
   display: flex;
   flex-direction: column;
@@ -948,6 +954,5 @@ body {
   .links {
     justify-content: space-between;
     gap: unset;
-    padding-left: 5px;
   }
 }
