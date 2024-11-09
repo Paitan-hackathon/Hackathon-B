@@ -615,7 +615,7 @@ body {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .rooms {
     padding: 80px 32px;
   }
@@ -844,8 +844,6 @@ body {
 }
 
 .image-container {
-  width: 178px;
-  height: 159px;
   flex-shrink: 0;
 }
 
@@ -902,7 +900,7 @@ body {
   height: 24px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   .linksFrame {
     flex: 1 0 0;
     flex-shrink: unset;
@@ -914,18 +912,6 @@ body {
     justify-content: center;
   }
 
-  .upper {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-  }
-
-  .lower {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .informationFrame {
     align-self: stretch;
   }
@@ -935,15 +921,10 @@ body {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .footer {
     padding: 48px 32px;
     gap: 31px;
-  }
-
-  .image-container {
-    width: 110px;
-    height: 99px;
   }
 
   .linksFrame {
@@ -952,7 +933,20 @@ body {
   }
 
   .links {
+    gap: 12px;
+    justify-content: space-evenly;
+  }
+
+  .links li {
+    display: flex;
     justify-content: space-between;
-    gap: unset;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .informationFrame {
+    align-self: stretch;
+    align-items: center;
+    gap: 12px;
   }
 }
