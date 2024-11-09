@@ -624,7 +624,7 @@ body {
     flex-direction: column;
     justify-content: unset;
     align-items: flex-start;
-    gap: var(--item-spacing-40, 40px);
+    gap: 40px;
     align-self: stretch;
   }
 
@@ -634,13 +634,14 @@ body {
     cursor: pointer;
     align-self: stretch;
     flex-direction: column;
+    align-items: center;
   }
 
   .plan-content {
     padding: 21px 12px;
     align-items: flex-start;
     color: black;
-    align-self: stretch;
+    align-items: stretch;
   }
 
   .plan-title {
