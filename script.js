@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const targets = document.querySelectorAll(
-    ".eventNews-container, .rooms, .features-card"
+    ".eventNews-container, .rooms, .features-card, .about-logo, .about-text-container"
   );
 
   const observerOptions = {
@@ -85,3 +85,12 @@ gsap.fromTo(
     repeat: -1,
   }
 );
+
+// header
+const menuIcon = document.getElementById("menuIcon");
+const header = document.getElementById("header");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("open");
+  header.classList.toggle("active");
+});

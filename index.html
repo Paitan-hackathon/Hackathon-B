@@ -17,44 +17,60 @@
     <title>Document</title>
   </head>
   <body>
-
     <!-- header -->
-    <section>
-      <header class="header">
-        <div class="header-container">
-          <img src="./images/logo-black.svg" alt="ヘッダーロゴ" />
-          <div class="header-content-container">
-            <div class="header-content">
-              <a class="header-link">NEWS</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">RECOMMEND</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">PLAN</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">ACTIVITY</a>
-            </div>
-            <div class="header-content">
-              <a class="header-link">ACCESS</a>
-            </div>
-          </div>
-        </div>
-        <button class="reservation-button">予約</button>
-      </header>
-    </section>
+    <header class="header">
+      <img src="./images/logo-black.svg" alt="ヘッダーロゴ" />
+      <nav id="header" class="header-container">
+        <ul class="header-content-container">
+          <li class="header-content">
+            <a class="header-link">NEWS</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">RECOMMEND</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">PLAN</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">ACTIVITY</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">ACCESS</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link">予約</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="reservation-button">予約</button>
+      <button id="menuIcon" class="hamburger">
+        <span class="hamburger-bar top"></span>
+        <span class="hamburger-bar middle"></span>
+        <span class="hamburger-bar bottom"></span>
+      </button>
+    </header>
 
     <!-- top image -->
     <section class="top-image">
       <div class="top-image-container">
-        <div class="top-image-slide"><img src="./images/image.jpg" alt=""/></div>
-        <div class="top-image-slide"><img src="./images/image.png" alt=""/></div>
-        <div class="top-image-slide"><img src="./images/image-1.png" alt=""/></div>
-        <div class="top-image-slide"><img src="./images/image-2.png" alt="" /></div>
-        <div class="top-image-slide"><img src="./images/image-3.png" alt=""/></div>
-        <div class="top-image-slide"><img src="./images/image.jpg" alt=""/></div>
-
+        <div class="top-image-slide">
+          <img src="./images/image.jpg" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image-1.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image-2.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image-3.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image.jpg" alt="" />
+        </div>
       </div>
       <div class="top-image-indicators">
         <div class="top-image-indicator" data-slide="0"></div>
@@ -91,7 +107,7 @@
     <!-- about -->
     <section>
       <div class="about">
-        <img src="images/logo.svg" class="about-logo" alt=""/>
+        <img src="images/logo.svg" class="about-logo" alt="ロゴ" />
         <div class="about-text-container">
           <p class="about-text">
             日本一星空が綺麗な場所として有名な、
@@ -253,12 +269,20 @@
         <button class="activity-button">一覧を見る</button>
       </div>
     </section>
-    
+
     <!-- access -->
     <section class="access">
       <h2 class="access-title">ACCESS</h2>
       <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5253086679463!2d137.6628703765844!3d35.44178734308895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ca5d22d7e9561%3A0x8062957b5961dc6a!2zbW9ra2nvvZ5TVEFSRFVTVCBHTEFNUElOR--9ng!5e0!3m2!1sja!2sjp!4v1730946825939!5m2!1sja!2sjp" width="1100" height="360" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5253086679463!2d137.6628703765844!3d35.44178734308895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ca5d22d7e9561%3A0x8062957b5961dc6a!2zbW9ra2nvvZ5TVEFSRFVTVCBHTEFNUElOR--9ng!5e0!3m2!1sja!2sjp!4v1730946825939!5m2!1sja!2sjp"
+          width="1100"
+          height="360"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
       <div class="access-checkin">
         <p>チェックイン</p>
