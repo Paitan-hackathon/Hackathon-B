@@ -100,7 +100,8 @@ const toggle = document.getElementById('dark-mode-toggle');
 const containers = document.querySelectorAll(
   'body, .header, .reservation-button, .features-cards, .features-cards h2, .features-textarea, .hamburger-bar, ' +
   '.hamburger, .news-font, .news-list, .news-date, .news-design, .news, .news-text, .top-image-indicator, ' +
-  '.top-image-indicator.active, .rooom' 
+  '.top-image-indicator.active, .rooom, .list-button-container, list-button-container:hover, .activity, .activity-button, ' +
+  '.activity-button:hover, .activity-card-description, .activity-card-text, .activity-card-title, .access-checkin' 
 );
 
 toggle.addEventListener('change', function() {

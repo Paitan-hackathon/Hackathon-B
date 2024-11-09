@@ -1037,7 +1037,7 @@ body.dark-mode{
 }
 
 .features-cards.dark-mode{
-  background-color: #000232;
+  background-color: #030421;
 }
 
 .features-cards h2.dark-mode{
@@ -1051,3 +1051,45 @@ body.dark-mode{
 .rooms.dark-mode{
   background-color: #eee;
 }
+
+.list-button-container.dark-mode{
+  color: #04062e ;
+}
+
+.list-button-container:hover.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.activity.dark-mode{
+  background-color: #030421;
+}
+
+.activity-card-description.dark-mode{
+  background: #ECECEC;
+}
+
+.activity-card-title.dark-mode{
+  color: #000000;
+}
+
+.activity-card-text.dark-mode{
+  color: #000000;
+}
+
+.activity-button.dark-mode{
+  border: 2px solid #EDDEA3;
+  background-color: #030421;
+  color: #EDDEA3;
+}
+
+.activity-button:hover.dark-mode{
+  color: #030421;
+  background-color: #EDDEA3;
+}
+
+.access-checkin.dark-mode{
+  color: #000000;
+}
+
