@@ -506,6 +506,7 @@ body {
   line-height: 100%;
   letter-spacing: 10px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .stay-plan-list {
@@ -609,6 +610,40 @@ body {
   .plan-content {
     align-items: flex-start;
     flex: 1 0 0;
+  }
+
+  .plan-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .rooms {
+    padding: 80px 32px;
+    width: 425px;
+  }
+
+  .stay-plan-list {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: flex-start;
+    gap: var(--item-spacing-40, 40px);
+    align-self: stretch;
+  }
+
+  .plan-introduction {
+    justify-content: flex-end;
+    gap: 8px;
+    cursor: pointer;
+    align-self: stretch;
+    flex-direction: column;
+  }
+
+  .plan-content {
+    padding: 21px 12px;
+    align-items: flex-start;
+    color: black;
+    align-self: stretch;
   }
 
   .plan-title {
