@@ -55,8 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
     x: "-400vw",
     duration: 4,
     delay: 1,
+    onStart: () => updateIndicator(4),
+  });
+  tl.to(".top-image-slide", {
+    x: "-500vw",
+    duration: 4,
+    delay: 1,
     onStart: () => updateIndicator(0),
   });
+
   tl.to(".top-image-slide", { x: 0, duration: 0 });
 });
 
