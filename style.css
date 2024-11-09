@@ -925,3 +925,10 @@ body {
     align-self: stretch;
   }
 }
+
+@media (max-width: 540px) {
+  .footer {
+    padding: 48px 32px;
+    gap: 31px;
+  }
+}
