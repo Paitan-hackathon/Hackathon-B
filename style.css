@@ -9,6 +9,7 @@ body {
   padding-top: 139px;
   color: #030421;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -97,6 +98,7 @@ body {
   align-items: center;
   gap: 30px;
   background-color: #eee;
+  overflow: hidden;
 }
 
 .activity-title {
@@ -125,6 +127,7 @@ body {
 
 .activity-card-description {
   width: 350px;
+  height: 210px;
   padding: 20px 10px;
   border-radius: 5px;
   background: #fff;
@@ -156,6 +159,12 @@ body {
   font-weight: 500;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.activity-button:hover {
+  background-color: #030421;
+  color: #fff;
 }
 
 /* top image */
