@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const targets = document.querySelectorAll(
-    ".eventNews-container, .rooms, .features-card"
+    ".eventNews-container, .rooms, .features-card, .about-logo, .about-text-container"
   );
 
   const observerOptions = {
