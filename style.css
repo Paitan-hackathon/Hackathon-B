@@ -18,7 +18,7 @@ body {
   top: 0;
   padding: 16px 84px;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   background-color: #eee;
   display: flex;
   justify-content: space-between;
@@ -29,14 +29,13 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  flex: 1;
 }
 
 .header-content-container {
   display: flex;
   align-items: center;
-  margin-left: 162px;
   gap: 33px;
+  list-style: none;
 }
 
 .header-content {
@@ -45,6 +44,10 @@ body {
   cursor: pointer;
   letter-spacing: 1.95px;
   transition: all 0.3s ease;
+}
+
+.header-content:last-child {
+  display: none;
 }
 
 .header-content:hover {
@@ -60,6 +63,111 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.reservation-button:hover {
+  background-color: #030421;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    padding: 16px 40px;
+  }
+
+  .header-content-container {
+    flex-direction: column;
+    margin: 0px;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    padding: 0px;
+    background-color: #eee;
+    gap: 0px;
+    display: none;
+  }
+
+  .header-container.active {
+    .header-content-container {
+      display: block;
+    }
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  .header-content:last-child {
+    display: block;
+  }
+
+  .header-content:hover {
+    background-color: #030421;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .reservation-button {
+    display: none;
+  }
+
+  /* ハンバーガーアイコンの基本スタイル */
+  .hamburger {
+    width: 48px;
+    height: 36px;
+    margin: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    border: none;
+  }
+
+  /* 各ラインの基本スタイル */
+  .hamburger-bar {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: 0.5s ease;
+    position: absolute;
+    left: 0;
+  }
+
+  /* 3本のラインの初期位置 */
+  .top {
+    top: 0;
+  }
+
+  .middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bottom {
+    top: calc(100% - 4px);
+  }
+
+  /* アイコンが「×」の状態のスタイル */
+  .hamburger.open .top {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  .hamburger.open .middle {
+    opacity: 0;
+  }
+
+  .hamburger.open .bottom {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
 }
 
 /* about */
@@ -75,6 +183,14 @@ body {
 
 .about-logo {
   width: 239px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.about-logo.on {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-text-container {
@@ -84,10 +200,30 @@ body {
   font-weight: 500;
   line-height: 32px;
   margin: 0px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.about-text-container.on {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-text {
   margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0px 71px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about {
+    padding: 0px 64px;
+  }
 }
 
 /* activity */
