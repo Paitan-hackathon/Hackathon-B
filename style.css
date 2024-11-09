@@ -89,12 +89,15 @@ body {
     padding: 0px;
     background-color: #eee;
     gap: 0px;
-    display: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
   }
 
   .header-container.active {
     .header-content-container {
-      display: block;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
@@ -135,7 +138,7 @@ body {
     width: 100%;
     height: 4px;
     background-color: black;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     position: absolute;
     left: 0;
   }
