@@ -275,6 +275,58 @@ body {
   line-height: 150%;
 }
 
+@media (max-width: 1100px) {
+  .eventNews-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  .news-font {
+    font-weight: 400;
+  }
+
+  .news-list {
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .eventNews {
+    padding: 52px 32px;
+    align-items: flex-start;
+  }
+
+  .eventNews-container {
+    align-items: flex-start;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+
+  .news-font {
+    font-weight: 400;
+  }
+
+  .news-list {
+    padding: 0;
+    gap: 16px;
+    border: none;
+    align-self: stretch;
+  }
+
+  .news-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 /*rooms*/
 .rooms {
   background-color: #e5e5e5;
@@ -445,7 +497,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1100px){
   .features-card{
     display: flex;
     align-items: center;
@@ -460,12 +512,16 @@ body {
     padding: 24px;
   }
 
+  .features-image{
+    text-align: center;
+  }
+
   .features-image img{
     width: 548px;
   }
 }
 
-@media (max-width: 425px){
+@media (max-width: 640px){
   .features-cards{
     padding: 80px 32px;
   }
@@ -478,6 +534,10 @@ body {
   
   .features-card:nth-child(even){
     flex-direction: column-reverse;
+  }
+
+  .features-image{
+    text-align: center;
   }
 
   .features-image img{
