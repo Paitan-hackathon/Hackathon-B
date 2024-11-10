@@ -102,7 +102,7 @@ const containers = document.querySelectorAll(
   '.hamburger, .news-font, .news-list, .news-date, .news-design, .news, .news-text, .top-image-indicator, ' +
   '.top-image-indicator.active, .rooom, .list-button-container, list-button-container:hover, .activity, .activity-button, ' +
   '.activity-button:hover, .activity-card-description, .activity-card-text, .activity-card-title, .access-checkin, ' +
-  '.links a, .information-container' 
+  '.links a, .information-container, .header-content-container, .header-content' 
 );
 
 toggle.addEventListener('change', function() {
