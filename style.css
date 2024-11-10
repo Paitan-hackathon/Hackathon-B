@@ -1116,3 +1116,15 @@ body.dark-mode{
   color: #000000;
 }
 
+.links a.dark-mode{
+  color: #EDDEA3;
+}
+
+.links a:hover.dark-mode{
+  color: #fff;
+}
+
+.information-container.dark-mode{
+  color: #EDDEA3;
+}
+
