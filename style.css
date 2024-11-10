@@ -694,6 +694,7 @@ body {
 .features-title-number {
   margin: 0;
   font-size: 50px;
+  font-weight: 1;
 }
 
 .features-sub-title {
@@ -757,18 +758,6 @@ body {
   }
 }
 
-/* .dark-theme .features-cards{
-  background-color: #030421;
-}
-
-.dark-theme .features-card h2{
-  color: #EDDEA3;
-}
-
-.dark-theme .features-textarea{
-  color: #030421;
-} */
-
 /* access */
 .access {
   display: flex;
@@ -829,10 +818,6 @@ body {
     padding-top: 100%;
   }
 }
-
-/* .dark-theme .access{
-  background-color: #EEEEEE;
-} */
 
 /*footer*/
 .footer {
@@ -951,3 +936,195 @@ body {
     gap: 12px;
   }
 }
+
+/* toglle */
+/* toggle */
+.toggle{
+  display: flex;
+  justify-content: center;
+}
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider{
+  background-color: #2196F3;
+}
+
+input:checked + .slider::before{
+  transform: translateX(26px);
+}
+
+/* dark-mode */
+body.dark-mode{
+  background-color: #000232;
+  color: #EDDEA3;
+}
+
+.header.dark-mode{
+  background-color: #000232;
+}
+
+/* .header img.dark-mode{
+  opacity: 0;
+} */
+
+.reservation-button.dark-mode{
+  background-color: #000232;
+  color: #EDDEA3;
+  border: 2px solid #EDDEA3;
+  transition: 0s;
+}
+
+.reservation-button.dark-mode:hover {
+  background-color: #EDDEA3;
+  color: #030421;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1100px) {
+.hamburger.dark-mode{
+  background: #000232;
+}
+
+.hamburger-bar.dark-mode{
+  background-color: #EDDEA3;
+  transition: 0s;
+}}
+
+.top-image-indicator.dark-mode{
+  border: 2px solid #EDDEA3;
+}
+
+.top-image-indicator.active.dark-mode{
+  background-color: #EDDEA3;
+}
+
+.news-font.dark-mode{
+  color: #EDDEA3;
+}
+
+.news-list.dark-mode{
+  border-left: 1px solid #EDDEA3;
+}
+
+.news-date.dark-mode{
+  color: #EDDEA3;
+}
+
+.news-design.dark-mode{
+  background-color: #EDDEA3;
+}
+
+.news.dark-mode{
+  color: #000232;
+}
+
+.news-text.dark-mode{
+  color: #EDDEA3;
+}
+
+.features-cards.dark-mode{
+  background-color: #030421;
+}
+
+.features-cards h2.dark-mode{
+  color: #EDDEA3;
+}
+
+.features-textarea.dark-mode{
+  color: #EDDEA3;
+}
+
+.rooms.dark-mode{
+  background-color: #eee;
+}
+
+.list-button-container.dark-mode{
+  color: #04062e ;
+}
+
+.list-button-container:hover.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.activity.dark-mode{
+  background-color: #030421;
+}
+
+.activity-card-description.dark-mode{
+  background: #ECECEC;
+}
+
+.activity-card-title.dark-mode{
+  color: #000000;
+}
+
+.activity-card-text.dark-mode{
+  color: #000000;
+}
+
+.activity-button.dark-mode{
+  border: 2px solid #EDDEA3;
+  background-color: #030421;
+  color: #EDDEA3;
+}
+
+.activity-button:hover.dark-mode{
+  color: #030421;
+  background-color: #EDDEA3;
+}
+
+.access-checkin.dark-mode{
+  color: #000000;
+}
+
+.links a.dark-mode{
+  color: #EDDEA3;
+}
+
+.links a:hover.dark-mode{
+  color: #fff;
+}
+
+.information-container.dark-mode{
+  color: #EDDEA3;
+}
+

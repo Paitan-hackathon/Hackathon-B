@@ -21,7 +21,7 @@
     <section>
       <header class="header">
         <div class="header-container">
-          <img src="./images/logo-black.svg" alt="ヘッダーロゴ" />
+          <img id="header-logo" src="./images/logo-black.svg" alt="ヘッダーロゴ" />
           <div class="header-content-container">
             <div class="header-content">
               <a class="header-link">NEWS</a>
@@ -41,22 +41,31 @@
           </div>
         </div>
         <button class="reservation-button">予約</button>
+        <div id="menuIcon" class="hamburger">
+          <span class="hamburger-bar top"></span>
+          <span class="hamburger-bar middle"></span>
+          <span class="hamburger-bar bottom"></span>
+        </div>
       </header>
     </section>
+
     <!-- top image -->
     <section class="top-image">
       <div class="top-image-container">
-        <div class="top-image-slide"></div>
-          <img src="./images/image.jpg" alt="" />
-        </div>
         <div class="top-image-slide">
           <img src="./images/image.jpg" alt="" />
         </div>
         <div class="top-image-slide">
-          <img src="./images/image.jpg" alt="" />
+          <img src="./images/image.png" alt="" />
         </div>
         <div class="top-image-slide">
-          <img src="./images/image.jpg" alt="" />
+          <img src="./images/image-1.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image-2.png" alt="" />
+        </div>
+        <div class="top-image-slide">
+          <img src="./images/image-3.png" alt="" />
         </div>
         <div class="top-image-slide">
           <img src="./images/image.jpg" alt="" />
@@ -67,8 +76,18 @@
         <div class="top-image-indicator" data-slide="1"></div>
         <div class="top-image-indicator" data-slide="2"></div>
         <div class="top-image-indicator" data-slide="3"></div>
+        <div class="top-image-indicator" data-slide="4"></div>
       </div>
     </section>
+      
+    <!-- トグルボタン -->
+    <div class="toggle">
+          <label class="switch">
+             <input type="checkbox" id="dark-mode-toggle">
+             <span class="slider"></span>
+          </label>
+    </div>
+ 
 
     <!-- event news -->
     <section class="eventNews" id="NEWS">
@@ -281,7 +300,7 @@
     <!-- footer -->
     <footer class="footer">
         <div class="image-container">
-          <img src="./images/logo.svg" , alt="" />
+          <img id="footer-logo" src="./images/logo.svg" , alt="" />
         </div>
 
         <div class="linksFrame">
@@ -295,17 +314,17 @@
 
           <div class="informationFrame">
             <div class="information-container">
-              <img src="./images/map-marker-outline.png" alt="住所" />
+              <img id="map-icon" src="./images/map-marker-outline.png" alt="住所" />
               〒395-0304 長野県下伊那郡阿智村智里4152-67
             </div>
 
             <div class="information-container">
-              <img src="./images/phone.png" alt="電話番号" />
+              <img id="phone-icon" src="./images/phone.png" alt="電話番号" />
               080-1234-5678
             </div>
 
             <div class="information-container">
-              <img src="./images/email-outline.png" alt="メールアドレス" />
+              <img id="mail-icon" src="./images/email-outline.png" alt="メールアドレス" />
               aaaaaaaaa@gmail.com
             </div>
           </div>
