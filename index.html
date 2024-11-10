@@ -17,46 +17,46 @@
     <title>Document</title>
   </head>
   <body>
- <!-- header -->
- <header class="header">
-  <img id="header-logo" src="./images/logo-black.svg" alt="ヘッダーロゴ" />
-  <nav id="header" class="header-container">
-    <ul class="header-content-container">
-      <li class="header-content">
-        <a class="header-link">NEWS</a>
-      </li>
-      <li class="header-content">
-        <a class="header-link">RECOMMEND</a>
-      </li>
-      <li class="header-content">
-        <a class="header-link">PLAN</a>
-      </li>
-      <li class="header-content">
-        <a class="header-link">ACTIVITY</a>
-      </li>
-      <li class="header-content">
-        <a class="header-link">ACCESS</a>
-      </li>
-      <li>
-        <div class="toggle">
-          <label class="switch">
-          <input type="checkbox" id="dark-mode-toggle">
-          <span class="slider"></span>
-          </label>
-        </div>
-      </li>
-      <li class="header-content">
-        <a class="header-link">予約</a>
-      </li>
-    </ul>
-  </nav>
-  <button class="reservation-button">予約</button>
-  <div id="menuIcon" class="hamburger">
-    <span class="hamburger-bar top"></span>
-    <span class="hamburger-bar middle"></span>
-    <span class="hamburger-bar bottom"></span>
-  </div>
-</header>
+    <!-- header -->
+    <header class="header">
+      <img id="header-logo" src="./images/logo-black.svg" alt="ヘッダーロゴ" />
+      <nav id="header" class="header-container">
+        <ul class="header-content-container">
+          <li class="header-content">
+            <a class="header-link" href="#NEWS">NEWS</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link" href="#RECOMMEND">RECOMMEND</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link" href="#PLAN">PLAN</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link" href="#ACTIVITY">ACTIVITY</a>
+          </li>
+          <li class="header-content">
+            <a class="header-link" href="#ACCESS">ACCESS</a>
+          </li>
+          <li>
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li class="header-content">
+            <a class="header-link">予約</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="reservation-button">予約</button>
+      <div id="menuIcon" class="hamburger">
+        <span class="hamburger-bar top"></span>
+        <span class="hamburger-bar middle"></span>
+        <span class="hamburger-bar bottom"></span>
+      </div>
+    </header>
 
     <!-- top image -->
     <section class="top-image">
@@ -87,7 +87,7 @@
         <div class="top-image-indicator" data-slide="3"></div>
         <div class="top-image-indicator" data-slide="4"></div>
       </div>
-    </section> 
+    </section>
 
     <!-- event news -->
     <section class="eventNews" id="NEWS">
@@ -115,7 +115,7 @@
     <!-- about -->
     <section>
       <div class="about">
-        <img src="images/logo.svg" class="about-logo" alt=""/>
+        <img src="images/logo.svg" class="about-logo" alt="" />
         <div class="about-text-container">
           <p class="about-text">
             日本一星空が綺麗な場所として有名な、
@@ -299,36 +299,44 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="image-container">
-          <img id="footer-logo" src="./images/logo.svg" , alt="" />
-        </div>
+      <div class="image-container">
+        <img id="footer-logo" src="./images/logo.svg" , alt="" />
+      </div>
 
-        <div class="linksFrame">
-          <ul class="links">
-            <li class="upper"><a href="#NEWS">NEWS</a></li>
-            <li class="upper"><a href="#RECOMMEND">RECOMMEND</a></li>
-            <li class="upper"><a href="#PLAN">PLAN</a></li>
-            <li class="lower"><a href="#ACTIVITY">ACTIVITY</a></li>
-            <li class="lower"><a href="#ACCESS">ACCESS</a></li>
-          </ul>          
+      <div class="linksFrame">
+        <ul class="links">
+          <li class="upper"><a href="#NEWS">NEWS</a></li>
+          <li class="upper"><a href="#RECOMMEND">RECOMMEND</a></li>
+          <li class="upper"><a href="#PLAN">PLAN</a></li>
+          <li class="lower"><a href="#ACTIVITY">ACTIVITY</a></li>
+          <li class="lower"><a href="#ACCESS">ACCESS</a></li>
+        </ul>
 
-          <div class="informationFrame">
-            <div class="information-container">
-              <img id="map-icon" src="./images/map-marker-outline.png" alt="住所" />
-              〒395-0304 長野県下伊那郡阿智村智里4152-67
-            </div>
+        <div class="informationFrame">
+          <div class="information-container">
+            <img
+              id="map-icon"
+              src="./images/map-marker-outline.png"
+              alt="住所"
+            />
+            〒395-0304 長野県下伊那郡阿智村智里4152-67
+          </div>
 
-            <div class="information-container">
-              <img id="phone-icon" src="./images/phone.png" alt="電話番号" />
-              080-1234-5678
-            </div>
+          <div class="information-container">
+            <img id="phone-icon" src="./images/phone.png" alt="電話番号" />
+            080-1234-5678
+          </div>
 
-            <div class="information-container">
-              <img id="mail-icon" src="./images/email-outline.png" alt="メールアドレス" />
-              aaaaaaaaa@gmail.com
-            </div>
+          <div class="information-container">
+            <img
+              id="mail-icon"
+              src="./images/email-outline.png"
+              alt="メールアドレス"
+            />
+            aaaaaaaaa@gmail.com
           </div>
         </div>
+      </div>
     </footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
