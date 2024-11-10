@@ -43,7 +43,6 @@ body {
   text-align: center;
   cursor: pointer;
   letter-spacing: 1.95px;
-  transition: all 0.3s ease;
 }
 
 .header-content:last-child {
@@ -51,8 +50,17 @@ body {
 }
 
 .header-content:hover {
-  color: #141998;
   border-bottom: 1px solid #141998;
+
+  .header-link {
+    color: #141998;
+    text-decoration: none;
+  }
+}
+
+.header-link {
+  color: #030421;
+  text-decoration: none;
 }
 
 .reservation-button {
@@ -112,8 +120,11 @@ body {
 
   .header-content:hover {
     background-color: #030421;
-    color: #fff;
-    border-bottom: none;
+
+    .header-link {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   .reservation-button {
@@ -939,25 +950,25 @@ body {
 
 /* toglle */
 /* toggle */
-.toggle{
+.toggle {
   display: flex;
   justify-content: center;
 }
 
-.switch{
+.switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
 
-.switch input{
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider{
+.slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -969,7 +980,7 @@ body {
   border-radius: 34px;
 }
 
-.slider:before{
+.slider:before {
   position: absolute;
   content: "";
   width: 26px;
@@ -981,44 +992,52 @@ body {
   transition: 0.4s;
 }
 
-input:checked + .slider{
-  background-color: #EDDEA3;
+input:checked + .slider {
+  background-color: #eddea3;
 }
 
-input:checked + .slider::before{
+input:checked + .slider::before {
   background-color: #030421;
   transform: translateX(26px);
 }
 
 /* dark-mode */
-body.dark-mode{
+body.dark-mode {
   background-color: #000232;
-  color: #EDDEA3;
+  color: #eddea3;
 }
 
-.header.dark-mode{
+.header.dark-mode {
   background-color: #030421;
+}
+
+.header-content.dark-mode {
+  .header-link {
+    color: #eddea3;
+  }
 }
 
 .header-content.dark-mode:hover {
   color: #fff;
   border-bottom: 1px solid #fff;
+
+  .header-link {
+    color: #fff;
+  }
 }
 
-
-.reservation-button.dark-mode{
+.reservation-button.dark-mode {
   background-color: #030421;
-  color: #EDDEA3;
-  border: 2px solid #EDDEA3;
+  color: #eddea3;
+  border: 2px solid #eddea3;
   transition: 0s;
 }
 
 .reservation-button.dark-mode:hover {
-  background-color: #EDDEA3;
+  background-color: #eddea3;
   color: #030421;
   transition: all 0.3s ease;
 }
-
 
 @media screen and (max-width: 1100px) {
   .header-content-container.dark-mode {
@@ -1026,71 +1045,73 @@ body.dark-mode{
   }
 
   .header-content.dark-mode:hover {
-    background-color: #EDDEA3;
-    color: #030421;
+    background-color: #eddea3;
+
+    .header-link {
+      color: #030421;
+    }
   }
 
+  .hamburger.dark-mode {
+    background: #000232;
+  }
 
-  
-.hamburger.dark-mode{
-  background: #000232;
+  .hamburger-bar.dark-mode {
+    background-color: #eddea3;
+    transition: 0s;
+  }
 }
 
-.hamburger-bar.dark-mode{
-  background-color: #EDDEA3;
-  transition: 0s;
-}}
-
-.top-image-indicator.dark-mode{
-  border: 2px solid #EDDEA3;
+.top-image-indicator.dark-mode {
+  border: 2px solid #eddea3;
 }
 
-.top-image-indicator.active.dark-mode{
-  background-color: #EDDEA3;
+.top-image-indicator.active.dark-mode {
+  background-color: #eddea3;
 }
 
-.news-font.dark-mode{
-  color: #EDDEA3;
+.news-font.dark-mode {
+  color: #eddea3;
 }
 
-.news-list.dark-mode{
-  border-left: 1px solid #EDDEA3;
+.news-list.dark-mode {
+  border-left: 1px solid #eddea3;
 }
 
-.news-date.dark-mode{
-  color: #EDDEA3;
+.news-date.dark-mode {
+  color: #eddea3;
 }
 
-.news-design.dark-mode{
-  background-color: #EDDEA3;
+.news-design.dark-mode {
+  background-color: #eddea3;
 }
 
-.news.dark-mode{
+.news.dark-mode {
   color: #000232;
 }
 
-.news-text.dark-mode{
-  color: #EDDEA3;
+.news-text.dark-mode {
+  color: #eddea3;
 }
 
-.features-cards.dark-mode{
+.features-cards.dark-mode {
   background-color: #030421;
 }
 
-.features-cards h2.dark-mode{
-  color: #EDDEA3;
+.features-cards h2.dark-mode {
+  color: #eddea3;
 }
 
-.features-textarea.dark-mode{
-  color: #EDDEA3;
+.features-textarea.dark-mode {
+  color: #eddea3;
 }
 
-.rooms.dark-mode{
+.rooms.dark-mode {
   background-color: #eee;
 }
 
-.list-button-container.dark-mode{
-  color: #04062e ;
+.list-button-container.dark-mode {
+  color: #04062e;
 }
 
 .list-button-container:hover.dark-mode {
@@ -1098,47 +1119,45 @@ body.dark-mode{
   color: white;
 }
 
-
-.activity.dark-mode{
+.activity.dark-mode {
   background-color: #030421;
 }
 
-.activity-card-description.dark-mode{
-  background: #ECECEC;
+.activity-card-description.dark-mode {
+  background: #ececec;
 }
 
-.activity-card-title.dark-mode{
+.activity-card-title.dark-mode {
   color: #000000;
 }
 
-.activity-card-text.dark-mode{
+.activity-card-text.dark-mode {
   color: #000000;
 }
 
-.activity-button.dark-mode{
-  border: 2px solid #EDDEA3;
+.activity-button.dark-mode {
+  border: 2px solid #eddea3;
   background-color: #030421;
-  color: #EDDEA3;
+  color: #eddea3;
 }
 
-.activity-button:hover.dark-mode{
+.activity-button:hover.dark-mode {
   color: #030421;
-  background-color: #EDDEA3;
+  background-color: #eddea3;
 }
 
-.access-checkin.dark-mode{
+.access-checkin.dark-mode {
   color: #000000;
 }
 
-.links a.dark-mode{
-  color: #EDDEA3;
+.links a.dark-mode {
+  color: #eddea3;
 }
 
-.links a:hover.dark-mode{
+.links a:hover.dark-mode {
   color: #fff;
 }
 
-.information-container.dark-mode{
-  color: #EDDEA3;
+.information-container.dark-mode {
+  color: #eddea3;
 }
-
