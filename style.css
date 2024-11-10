@@ -583,7 +583,7 @@ body {
 }
 
 .plan-details {
-  color: #030421;
+  color: var(--black-russian);
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -1144,11 +1144,11 @@ body.dark-mode {
 }
 
 .activity-card-title.dark-mode {
-  color: #000000;
+  color: black;
 }
 
 .activity-card-text.dark-mode {
-  color: #000000;
+  color: black;
 }
 
 .activity-button.dark-mode {
@@ -1163,7 +1163,7 @@ body.dark-mode {
 }
 
 .access-checkin.dark-mode {
-  color: #000000;
+  color: black;
 }
 
 .links a.dark-mode {
@@ -1171,7 +1171,7 @@ body.dark-mode {
 }
 
 .links a:hover.dark-mode {
-  color: #fff;
+  color: white;
 }
 
 .information-container.dark-mode {
