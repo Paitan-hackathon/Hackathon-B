@@ -982,10 +982,11 @@ body {
 }
 
 input:checked + .slider{
-  background-color: #2196F3;
+  background-color: #EDDEA3;
 }
 
 input:checked + .slider::before{
+  background-color: #030421;
   transform: translateX(26px);
 }
 
@@ -996,15 +997,17 @@ body.dark-mode{
 }
 
 .header.dark-mode{
-  background-color: #000232;
+  background-color: #030421;
 }
 
-/* .header img.dark-mode{
-  opacity: 0;
-} */
+.header-content.dark-mode:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
 
 .reservation-button.dark-mode{
-  background-color: #000232;
+  background-color: #030421;
   color: #EDDEA3;
   border: 2px solid #EDDEA3;
   transition: 0s;
@@ -1018,6 +1021,17 @@ body.dark-mode{
 
 
 @media screen and (max-width: 1100px) {
+  .header-content-container.dark-mode {
+    background-color: #030421;
+  }
+
+  .header-content.dark-mode:hover {
+    background-color: #EDDEA3;
+    color: #030421;
+  }
+
+
+  
 .hamburger.dark-mode{
   background: #000232;
 }
