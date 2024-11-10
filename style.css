@@ -1,3 +1,8 @@
+:root{
+  --black-russian:#030421;
+  --light-yellow: #eddea3;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +12,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
   padding-top: 139px;
-  color: #030421;
+  color: var(--black-russian);
   margin: 0;
   overflow-x: hidden;
 }
@@ -59,7 +64,7 @@ body {
 }
 
 .header-link {
-  color: #030421;
+  color: var(--black-russian);
   text-decoration: none;
 }
 
@@ -75,7 +80,7 @@ body {
 }
 
 .reservation-button:hover {
-  background-color: #030421;
+  background-color: var(--black-russian);
   color: #fff;
 }
 
@@ -119,7 +124,7 @@ body {
   }
 
   .header-content:hover {
-    background-color: #030421;
+    background-color: var(--black-russian);
 
     .header-link {
       color: #fff;
@@ -290,7 +295,7 @@ body {
 
 .activity-card-title {
   padding: 10px;
-  border-bottom: 0.5px dashed #030421;
+  border-bottom: 0.5px dashed var(--black-russian);
   margin: 0px;
   font-weight: 400;
 }
@@ -304,7 +309,7 @@ body {
 .activity-button {
   padding: 12px 66px;
   border-radius: 12px;
-  border: 2px solid #030421;
+  border: 2px solid var(--black-russian);
   font-weight: 500;
   cursor: pointer;
   font-size: 16px;
@@ -312,7 +317,7 @@ body {
 }
 
 .activity-button:hover {
-  background-color: #030421;
+  background-color: var(--black-russian);
   color: #fff;
 }
 
@@ -405,7 +410,7 @@ body {
 }
 
 .news-date {
-  color: #030421;
+  color: var(--black-russian);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -783,7 +788,7 @@ body {
 .access-title {
   margin: 0;
   font-size: 50px;
-  color: #030421;
+  color: var(--black-russian);
   font-family: "Newsreader";
   letter-spacing: 0.2em;
 }
@@ -948,7 +953,6 @@ body {
   }
 }
 
-/* toglle */
 /* toggle */
 .toggle {
   display: flex;
@@ -994,27 +998,27 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #eddea3;
+  background-color: var(--light-yellow);
 }
 
 input:checked + .slider::before {
-  background-color: #030421;
+  background-color: var(--black-russian);
   transform: translateX(26px);
 }
 
 /* dark-mode */
 body.dark-mode {
   background-color: #000232;
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .header.dark-mode {
-  background-color: #030421;
+  background-color: var(--black-russian);
 }
 
 .header-content.dark-mode {
   .header-link {
-    color: #eddea3;
+    color: var(--light-yellow);
   }
 }
 
@@ -1028,28 +1032,28 @@ body.dark-mode {
 }
 
 .reservation-button.dark-mode {
-  background-color: #030421;
-  color: #eddea3;
-  border: 2px solid #eddea3;
+  background-color: var(--black-russian);
+  color: var(--light-yellow);
+  border: 2px solid var(--light-yellow);
   transition: 0s;
 }
 
 .reservation-button.dark-mode:hover {
-  background-color: #eddea3;
-  color: #030421;
+  background-color: var(--light-yellow);
+  color: var(--black-russian);
   transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1100px) {
   .header-content-container.dark-mode {
-    background-color: #030421;
+    background-color: var(--black-russian);
   }
 
   .header-content.dark-mode:hover {
-    background-color: #eddea3;
+    background-color: var(--light-yellow);
 
     .header-link {
-      color: #030421;
+      color: var(--black-russian);
     }
   }
 
@@ -1058,33 +1062,33 @@ body.dark-mode {
   }
 
   .hamburger-bar.dark-mode {
-    background-color: #eddea3;
+    background-color: var(--light-yellow);
     transition: 0s;
   }
 }
 
 .top-image-indicator.dark-mode {
-  border: 2px solid #eddea3;
+  border: 2px solid var(--light-yellow);
 }
 
 .top-image-indicator.active.dark-mode {
-  background-color: #eddea3;
+  background-color: var(--light-yellow);
 }
 
 .news-font.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .news-list.dark-mode {
-  border-left: 1px solid #eddea3;
+  border-left: 1px solid var(--light-yellow);
 }
 
 .news-date.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .news-design.dark-mode {
-  background-color: #eddea3;
+  background-color: var(--light-yellow);
 }
 
 .news.dark-mode {
@@ -1092,19 +1096,19 @@ body.dark-mode {
 }
 
 .news-text.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .features-cards.dark-mode {
-  background-color: #030421;
+  background-color: var(--black-russian);
 }
 
 .features-cards h2.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .features-textarea.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .rooms.dark-mode {
@@ -1121,7 +1125,7 @@ body.dark-mode {
 }
 
 .activity.dark-mode {
-  background-color: #030421;
+  background-color: var(--black-russian);
 }
 
 .activity-card-description.dark-mode {
@@ -1137,14 +1141,14 @@ body.dark-mode {
 }
 
 .activity-button.dark-mode {
-  border: 2px solid #eddea3;
-  background-color: #030421;
-  color: #eddea3;
+  border: 2px solid var(--light-yellow);
+  background-color: var(--black-russian);
+  color: var(--light-yellow);
 }
 
 .activity-button:hover.dark-mode {
-  color: #030421;
-  background-color: #eddea3;
+  color: var(--black-russian);
+  background-color: var(--light-yellow);
 }
 
 .access-checkin.dark-mode {
@@ -1152,7 +1156,7 @@ body.dark-mode {
 }
 
 .links a.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
 
 .links a:hover.dark-mode {
@@ -1160,5 +1164,5 @@ body.dark-mode {
 }
 
 .information-container.dark-mode {
-  color: #eddea3;
+  color: var(--light-yellow);
 }
