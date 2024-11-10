@@ -433,10 +433,15 @@ body {
 }
 
 .news-text {
-  color: black;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  cursor: pointer;
+}
+
+.news-text:hover {
+  color: #141998;
+  text-decoration: underline;
 }
 
 @media (max-width: 1100px) {
@@ -1108,6 +1113,10 @@ body.dark-mode {
 
 .news-text.dark-mode {
   color: var(--light-yellow);
+}
+
+.news-text:hover.dark-mode {
+  color: #fffcf0;
 }
 
 .features-cards.dark-mode {
